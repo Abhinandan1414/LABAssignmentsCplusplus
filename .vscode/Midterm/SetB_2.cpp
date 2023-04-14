@@ -11,37 +11,38 @@
 using namespace std;
 class DataSet
 {
-    private:
+private:
     int dataset[100];
-    float mean,variance,sd;
-    public:
+    float mean, variance, sd;
+
+public:
     void getDataAndCalculateStats()
     {
-        int i=0,m=0;
-        float totalVariance=0;
-        float sum=0;
-        cout<<"How many elements in data set?";
-        cin>>m;
-        cout<<"Enter the elements individually";
-        for(i=0;i<m;i++)
+        int i = 0, m = 0;
+        float totalVariance = 0;
+        float sum = 0;
+        cout << "How many elements in data set?";
+        cin >> m;
+        cout << "Enter the elements individually";
+        for (i = 0; i < m; i++)
         {
-            cin>>dataset[i];
+            cin >> dataset[i];
             sum = sum + dataset[i];
         }
-        cout <<"sum is"<<sum<<"m is"<<m;
-        mean = (sum/m);
-        for(i=0;i<m;i++)
+        cout << "sum is" << sum << "m is" << m;
+        mean = (sum / m);
+        for (i = 0; i < m; i++)
         {
-            totalVariance = (dataset[i]-mean)*(dataset[i]-mean);
+            totalVariance = (dataset[i] - mean) * (dataset[i] - mean);
         }
-        variance = totalVariance/m;
+        variance = totalVariance / m;
         sd = sqrt(variance);
     }
     void printStats()
     {
-        cout<<"Mean is "<<mean;
-        cout<<"Variance is"<<variance;
-        cout<<"SD is"<<sd;
+        cout << "Mean is " << mean;
+        cout << "Variance is" << variance;
+        cout << "SD is" << sd;
     }
 };
 int main()
