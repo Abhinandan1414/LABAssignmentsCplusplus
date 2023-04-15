@@ -18,7 +18,7 @@ void calculateCAGR(float principal, float n, float r)
     //investmentResult = principal*(pow((1+r/100),n));
     for(int i=1; i<=n;i++)
     {
-        cout<<investmentResult<<CAGR;
+        
         investmentResult = investmentResult*CAGR;
         cout<<"Your investment of "<<principal<<"at ";
         cout<<r<<"interest percent is"<< investmentResult<<"is"<<i<<"years later";

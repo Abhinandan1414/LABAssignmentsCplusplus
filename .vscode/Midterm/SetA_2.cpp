@@ -1,4 +1,3 @@
-// Complexity of the solution moderate for 4 Sem Students
 // Demonstrates
 // Functions
 // Control structures

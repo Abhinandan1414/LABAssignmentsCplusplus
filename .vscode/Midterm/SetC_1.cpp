@@ -1,4 +1,3 @@
-// Complexity of the solution simple for 4 Sem Students
 // Demonstrates
 // Functions
 // Control structures
@@ -16,10 +15,10 @@ void calculateCAGR(float principal, float n, float r)
     // investmentResult = principal*(pow((1+r/100),n));
     for (int i = 1; i <= n; i++)
     {
-        cout << investmentResult << CAGR;
+        //cout << investmentResult << CAGR;
         investmentResult = investmentResult * CAGR;
-        cout << "Your investment of " << principal << "at ";
-        cout << r << "interest percent is" << investmentResult << "is" << i << "years later";
+        cout << "Your investment of " << principal << " at ";
+        cout << r << " interest percent is " << investmentResult << " after " << i << " years ";
         cout << endl;
     }
 }

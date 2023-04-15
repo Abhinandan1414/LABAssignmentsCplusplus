@@ -1,4 +1,3 @@
-// Complexity of the solution moderate for 4 Sem Students
 // Demonstrates
 // Functions
 // Control structures
@@ -8,7 +7,7 @@
 
 #include <iostream>
 using namespace std;
-void cartesianProduct(string *a, int m, string *b, int n)
+void cartesianProduct(int *a, int m, int *b, int n)
 {
     int i, j;
     for (i = 0; i < m; i++)
@@ -23,8 +22,8 @@ int main()
 {
     const int N = 10;
     int m = 0, n = 0, i = 0, j = 0;
-    string a[N];
-    string b[N];
+    int a[N];
+    int b[N];
     cout << "Enter how many elements in first set?";
     cin >> m;
     cout << "Enter how many elements in second set?";

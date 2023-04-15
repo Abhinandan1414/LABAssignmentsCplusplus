@@ -49,6 +49,6 @@ int main()
     shortestDistance=sqrt((x2-x1)*(x2-x1)+(y2-y1)*(y2-y1));
     cout<<"Shortest distance between Point("<<x1<<","<<y1<<")";
     cout<<"and";
-    cout<<"Shortest distance between Point("<<x2<<","<<y2<<")";
+    cout<<"Point("<<x2<<","<<y2<<") ";
     cout<<shortestDistance;
 }
