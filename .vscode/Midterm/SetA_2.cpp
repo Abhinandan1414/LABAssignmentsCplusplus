@@ -3,6 +3,8 @@
 // Control structures
 // Expressions
 // Pointers
+// Classes and Objects
+// Programming Logic
 // Blooms Taxonomy Application
 
 #include <iostream>
@@ -24,15 +26,16 @@ public:
         x = x;
         y = y;
     }
-    void getxy(int *a, int *b)
-    {
-        *a = x;
-        *b = y;
-    }
+    
     void setxy()
     {
         cout << "Enter cartesian co-ordinates separated by space ";
         cin >> x >> y;
+    }
+    void getxy(int *a, int *b)
+    {
+        *a = x;
+        *b = y;
     }
 };
 

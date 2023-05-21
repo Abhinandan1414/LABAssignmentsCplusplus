@@ -9,9 +9,20 @@ protected:
     float mileage;
 
 public:
-    Vehicle(std::string makeVal, int yearOfManufatureVal, std::string registrationNumVal, float mileageVal)
-        : make{makeVal}, yearOfManufature{yearOfManufatureVal}, registrationNum{registrationNumVal}, mileage{mileageVal}
+    Vehicle()
     {
+        make = "";
+        yearOfManufature = 0;
+        registrationNum ="";
+        mileage = 0;
+    }
+    Vehicle(std::string makeVal, int yearOfManufatureVal, std::string registrationNumVal, float mileageVal)
+       
+    {
+        make =makeVal;
+        yearOfManufature = yearOfManufatureVal;
+        registrationNum = registrationNumVal;
+        mileage = mileageVal ;
     }
     void setData(std::string makeVal, int yesrOfManufatureVal, std::string registrationNumVal, float mileageVal)
     {
@@ -33,10 +44,18 @@ class LightMotorVehicle : public Vehicle
     int infantPassengers;
 
 public:
-    LightMotorVehicle(std::string makeVal, int yesrOfManufatureVal,
-                      std::string registrationNumVal, float mileageVal, int infantPassengerVal)
-        : Vehicle{makeVal, yesrOfManufatureVal, registrationNumVal, mileageVal}, infantPassengers{infantPassengerVal}
+    LightMotorVehicle()
     {
+        infantPassengers = 0;
+    }
+    LightMotorVehicle(std::string makeVal, int yearOfManufatureVal,
+                      std::string registrationNumVal, float mileageVal, int infantPassengerVal)
+    {
+        make =makeVal;
+        yearOfManufature = yearOfManufatureVal;
+        registrationNum = registrationNumVal;
+        mileage = mileageVal ;
+        infantPassengers = infantPassengerVal;
     }
     void setData(std::string makeVal, int yearOfManufatureVal, std::string registrationNumVal, float mileageVal, int infantPassengerVal)
     {
